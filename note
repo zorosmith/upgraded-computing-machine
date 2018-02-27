@@ -1,0 +1,117 @@
+0 about the difference between pcl1.7 and 1.6
+-------------------------------------------------
+He created a preprocessor  and made sense of the relationship between every files. Then we focused on the error info - undefined reference ***pointxyzrgbCamsL.... and found two template classes were instantiated without being defined. 
+About the search process, he added SET(GCC_COVERAGE_COMPILE_FLAGS "-g") in the Cmakelist to translate the error info and found that the origin of bugs located at line263 in the pointcloudClustering.h .
+Then we found that the KdTree wasn't instantiated successfully. 
+From then on , we found two template classes listing in follow were not defined in the head files
+pcl::PCLBase<PointT>
+pcl::search::KdTree<PointOutT>
+
+Then we compared the head files between two versions and found that the definition of these two template classes were included in other .hpp files.
+So we added two lines in the pointcloudClustering.h .
+#include <pcl/impl/pcl_base.hpp>
+#include <pcl/search/impl/kdtree.hpp>
+
+
+
+
+
+1 运行　./predict_seg ../data/ activityLabel.txt 1
+ERROR: 
+COULD NOT LOAD MODULE "svmstruct_mrf_act_dyn"!
+perhaps module is not in module search path?
+
+该error信息没有爆出实际的错误。
+在该路径下，
+$python
+$import svmstruct_mrf_act_dyn
+>>>Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "svmstruct_mrf_act_dyn.py", line 16, in <module>
+    import scipy as Sci
+>>>ImportError: No module named scipy
+
+可以看出，缺少scipy module
+
+#--------------------------------
+#     sh install_dependencies.sh
+用于安装svmstruct_mrf_act_dyn.py所用到的依赖项（对应的版本）
+#--------------------------------
+
+
+----------------------------------------------------
+2 找不到graphcut模块
+该模块为graphcut.so文件.模块的搜索路径没有定义graphcut.so的路径
+
+2-solution:
+在 ~/.bashrc 文件添加
+export PYTHONPATH="/home/gordon/shuangqi_compile/human_activity_anticipation/pygraphcut-0.1:$PYTHONPATH"
+
+
+------------------------------
+svmstruct_mrf_act_dyn.py
+4137  aggConfusionMatrix = aggConfusionMatrix + t[3];
+
+
+---------------------------------------
+参照install_dependencies.sh的指导，添加环境变量
+export PYTHONPATH=$PYTHONPATH:/home/vmrguser/ros/indigo/guozhen_ws/guozhen_compile/human_activity_anticipation/src/pyobjs/build/lib.linux-x86_64-2.7
+
+
+
+
+
+
+-------------------------------
+gdb debug setting
+set args ../data activityLabel.txt 1
+set print thread-events off
+
+
+-------------------------
+using person 3 dataset
+
+
+----------------------------------
+in this function, it tries to read the rgbd.txt dataset 
+main (argc=4, argv=0x7fffffffc378)
+    at /home/vmrguser/ros/indigo/guozhen_ws/guozhen_compile/human_activity_anticipation/src/streamingPrediction_segmented.cpp:583
+583			readData* DATA = new readData(dataLocation, all_files[i], data_act_map,
+584					i + 1, mirrored, mirrored_dataLocation, skipOdd, fileList,
+585					objPCFileList);
+
+
+----------------------------------
+调用python
+#0  read_struct_examples (file=0xa0bde0 <testfile> "test_0510175411.txt", sparm=0x7fffffff9330)
+    at /home/vmrguser/ros/indigo/guozhen_ws/guozhen_compile/human_activity_anticipation/src/svm_struct_api.c:137
+#1  0x0000000000746cac in svm_classifier (argc=14, argv=0x1860e70)
+    at /home/vmrguser/ros/indigo/guozhen_ws/guozhen_compile/human_activity_anticipation/src/svm_struct/svm_struct_classify_stream.c:62
+#2  0x000000000064088d in main (argc=4, argv=0x7fffffffc378)
+    at /home/vmrguser/ros/indigo/guozhen_ws/guozhen_compile/human_activity_anticipation/src/streamingPrediction_segmented.cpp:652
+
+
+
+
+
+
+
+
+2月３日
+
+1. Trying to open ../data/0510141923.txt
+	Opening Object feature file 0
+	Opening Object pc file 0: ../data//objects/0510141923_obj1.txt
+		total number of frames = 0
+end of activity! Activity smaller than intialization size
+skeleton: 2 rgbd: 1
+ERROR! FRAME NUMBER BETWEEN SKELETON AND RGBD DOES NOT MATCH!!!!!!!!! (READING RGBD)
+	currentFrameNum = 2
+	currentFrameNum_RGBD = 1
+
+
+
+
+
+
+

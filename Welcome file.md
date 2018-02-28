@@ -118,11 +118,9 @@ perhaps module is not in module search path?
  
 **Q2**. How to understand the code?
 
-**A2**. You can download the papers:
+**A2**. You can download the papers listed in the following websites:
 http://pr.cs.cornell.edu/humanactivities/index.php
 http://pr.cs.cornell.edu/anticipation/index.php
-
-Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE1ODI3NzRdfQ==
+eyJoaXN0b3J5IjpbOTIwOTc4MTIzXX0=
 -->

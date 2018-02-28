@@ -109,7 +109,7 @@ cd ../build/
 * * *
 
 
-**Q1**. When run the code, you may meet COULD NOT LOAD MODULE "svmstruct_mrf_act_dyn"!
+**Q1**. When run the code, you may meet tCOULD NOT LOAD MODULE "svmstruct_mrf_act_dyn"!
 perhaps module is not in module search path?
 
 **A1**.In order to use other camer,you need to modify the camera topic name and the launch file.
@@ -150,5 +150,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTI2NDU1MV19
+eyJoaXN0b3J5IjpbLTgzMjI2NzU3XX0=
 -->

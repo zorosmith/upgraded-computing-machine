@@ -100,7 +100,6 @@ cd ../build/
 ### [<span class="octicon octicon-link"></span>](#structure)Structure
 
 * * *
-The 2nd node it starts the YOLO that subscribe the camera topic.We use it to recognize the object in the image.
 ![image](https://github.com/Jiajie-Ye/YOLO_for_ROS/blob/master/yolo%20node%20and%20topic%20from%202018-01-25%2022:29:17.png)
 
 <a name="user-content-FAQ"></a>
@@ -150,5 +149,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Nzk3MDI1M119
+eyJoaXN0b3J5IjpbMTQ2MDEzMDhdfQ==
 -->

@@ -26,7 +26,7 @@ More details you can see the link (http://pr.cs.cornell.edu/anticipation/)
 * * *
 <a href="http://v.youku.com/v_show/id_XMzM4MzA5ODAyNA==.html?spm=a2hzp.8244740.0.0"></a>
 
-[![IMAGE ALT TEXT](http://static.youku.com/index/img/header/yklogo_h.png)](http://v.youku.com/v_show/id_XMzM4MzA5ODAyNA==.html?spm=a2hzp.8244740.0.0 "CMU openpose")
+[![IMAGE ALT TEXT](http://static.youku.com/index/img/header/yklogo_h.png)](https://www.youtube.com/watch?time_continue=9&v=dZyp41qBZBE "cornell anticipation project")
 
 <a name="user-content-Quickstart"></a>
 
@@ -154,5 +154,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjczMzU2NzldfQ==
+eyJoaXN0b3J5IjpbMTUyNzYxMTk5XX0=
 -->

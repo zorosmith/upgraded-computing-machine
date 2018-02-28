@@ -70,7 +70,7 @@ make
 #install learning code dependencies
 cd ../../
 sh install_dependencies.sh
-http://pr.cs.cornell.edu/web3/CAD-120/data/Subject1_rgbd_images.tar.gz
+
 # download data
 cd data/
 wget http://web3.cs.cornell.edu/pr/CAD-120/data/Subject1_rgbd_rawtext.tar.gz
@@ -154,5 +154,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA3MjIzMV19
+eyJoaXN0b3J5IjpbMTE2MDU4MTE2OV19
 -->

@@ -113,7 +113,7 @@ cd ../build/
 COULD NOT LOAD MODULE "*svmstruct_mrf_act_dyn*"!
 perhaps module is not in module search path?
 
-**A1**. You should make sure that you executed the script *install_dependencies.sh* successfully. It's best to install the libraries with the same version listed in the script.
+**A1**. First, you should make sure that you executed the script *install_dependencies.sh* successfully. It's best to install the libraries with the same version listed in the script.
  
  
 **Q2**. How to use other training weights.
@@ -132,5 +132,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5MDQ1OTgzXX0=
+eyJoaXN0b3J5IjpbNDA3MzQ5MjddfQ==
 -->

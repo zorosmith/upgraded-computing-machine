@@ -16,10 +16,7 @@ EN | [中文](https://github.com/birlrobotics/birl_baxter/wiki/yolo_for_ros_cn)
 <a name="user-content-Summary"></a>
 ### [<span class="octicon octicon-link"></span>](#summary)Summary
 ***
-This package provides an ROS interface to run the YOLO in the ROS as a node that subscribe camera topic,and you can choose to use webcam or Kinect to perform Real-Time Object Detection.The defaoult camera is Kinect.If you want to use another camera,you need to change the subscribed topic name in the yolo_ros.cpp. 
-Besides,the package contains the pretrained convolutional weights(yolo.weights and tiny-yolo.weights),and default uses the yolo.weights.Of course,you can use your trained convolutional weights but don't forget to match the object labol in yolo_ros.cpp.
-
-This package has been tested in Ubuntu 14.04 with camera of Kinect and webcam.
+Code for anticipating human activities (http://pr.cs.cornell.edu/anticipation/)
 
 <a name="user-content-Video"></a>
 ### [<span class="octicon octicon-link"></span>](#video)Video
@@ -116,5 +113,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTk1MzA2MV19
+eyJoaXN0b3J5IjpbLTE0MTA5NjcyNzZdfQ==
 -->

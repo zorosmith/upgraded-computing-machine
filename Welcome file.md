@@ -58,7 +58,7 @@ tar --bzip2 -xf boost_1_50_0.tar.bz2
 sudo ./b2 install
 
 # download code 
-git clone https://github.com/hemakoppula/human_activity_anticipation.git
+git clone https://github.com/nathantsoi/human_activity_anticipation
 
 # compile
 cd human_activity_anticipation/build
@@ -154,5 +154,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY2MzA4MzldfQ==
+eyJoaXN0b3J5IjpbLTE5NjczMzU2NzldfQ==
 -->

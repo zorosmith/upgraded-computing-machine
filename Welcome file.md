@@ -118,9 +118,9 @@ perhaps module is not in module search path?
  
 **Q2**. How to understand the code?
 
-**A2**. 
+**A2**. You can 
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzcxMTEwMTBdfQ==
+eyJoaXN0b3J5IjpbLTM0Njc1Njg4M119
 -->

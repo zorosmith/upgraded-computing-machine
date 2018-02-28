@@ -113,7 +113,7 @@ cd ../build/
 COULD NOT LOAD MODULE "svmstruct_mrf_act_dyn"!
 perhaps module is not in module search path?
 
-**A1**. You should make sure that you execute the script install_dependencies.sh succes 
+**A1**. You should make sure that you execute the script install_dependencies.sh successfully 
 
 for example,I want to use the webcam,modify the name just like the following lines ①②③：
 
@@ -151,5 +151,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzA3NDU5MF19
+eyJoaXN0b3J5IjpbMjEzODE4MjI5N119
 -->

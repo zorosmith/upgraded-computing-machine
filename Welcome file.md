@@ -33,7 +33,10 @@ More details you can see the link (http://pr.cs.cornell.edu/anticipation/)
 ### [<span class="octicon octicon-link"></span>](#quickstart)Quickstart
 
 * * *
-Before run this package,you need to install the required dependencies
+Before run this package,you need to install the required dependencies:
+-   OpenCV version 2.4 or greater (dev version or install from source)
+-   PCL 1.7
+-   Boost version 1.50 or greater
 
 Git clone the package into your catkin workspace.
 
@@ -115,5 +118,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ2MDY3Nl19
+eyJoaXN0b3J5IjpbMTc0NDMxMjQxOV19
 -->

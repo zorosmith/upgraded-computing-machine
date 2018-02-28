@@ -118,9 +118,10 @@ perhaps module is not in module search path?
  
 **Q2**. How to understand the code?
 
-**A2**. You can 
+**A2**. You can read the websites:
+http://pr.cs.cornell.edu/humanactivities/index.php
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Njc1Njg4M119
+eyJoaXN0b3J5IjpbMTg2NDM1MjUzN119
 -->

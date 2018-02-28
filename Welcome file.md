@@ -116,21 +116,11 @@ perhaps module is not in module search path?
 **A1**. First, you should make sure that you executed the script *install_dependencies.sh* successfully. It's best to install the libraries with the same version listed in the script.
  Second, you should modify the path（*PYTHONPATH*） at the bottoｍ of the script.
  
-**Q2**. How to understand the code.
+**Q2**. How to understand the code?
 
-**A2**. Firstly,you need to provide the weights and cfg files into the directories:
-
-`catkin_ws/src/darknet_ros/weights/`
-
-`catkin_ws/src/darknet_ros/cfg/`
-
-Then,open the yolo_ros.cpp file and modify the current path of the weights and cfg files.
-
-`char *cfg = "/home/catkin_ws/src/darknet_ros/cfg/yolo.cfg";`
-
-`char *weights = "/home/catkin_ws/src/darknet_ros/weights/yolo.weights";`
+**A2**. 
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzIyMjE0NV19
+eyJoaXN0b3J5IjpbLTE3NzcxMTEwMTBdfQ==
 -->

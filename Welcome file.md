@@ -37,8 +37,15 @@ Before run this package,you need to install the required dependencies:
 -   OpenCV version 2.4 or greater (dev version or install from source)
 -   PCL 1.7
 -   Boost version 1.50 or greater
-
+----------
 Commands to install the required dependencies and run anticipation code on Subject 1 data:
+
+```
+# install pcl
+sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl 
+sudo apt-get update
+sudo apt-get install libpcl-all
+```
 
 Git clone the package into your catkin workspace.
 
@@ -120,5 +127,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MzUzMDUzMF19
+eyJoaXN0b3J5IjpbMTc3NjYzMTMyNV19
 -->

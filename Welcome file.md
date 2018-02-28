@@ -38,6 +38,8 @@ Before run this package,you need to install the required dependencies:
 -   PCL 1.7
 -   Boost version 1.50 or greater
 
+Commands to install the required dependencies and run anticipation code on Subject 1 data:
+
 Git clone the package into your catkin workspace.
 
 `cd catkin_ws/src`
@@ -118,5 +120,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDMxMjQxOV19
+eyJoaXN0b3J5IjpbLTU4MzUzMDUzMF19
 -->

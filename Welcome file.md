@@ -18,7 +18,7 @@ EN | [中文](https://github.com/birlrobotics/birl_baxter/wiki/yolo_for_ros_cn)
 ***
 An important aspect of human perception is anticipation, which we use extensively in our day-to-day activities when interacting with other humans as well as with our surroundings. Anticipating which activities will a human do next (and how to do them) can enable an assistive robot to plan ahead for reactive responses in the human environments. Furthermore, anticipation can even improve the detection accuracy of past activities. In this work, we represent each possible future using an anticipatory temporal conditional random field (ATCRF) that models the rich spatial-temporal relations through object affordances. We then consider each ATCRF as a particle and represent the distribution over the potential futures using a set of particles
 
-More details can see (http://pr.cs.cornell.edu/anticipation/)
+More details you can see the link (http://pr.cs.cornell.edu/anticipation/)
 
 <a name="user-content-Video"></a>
 ### [<span class="octicon octicon-link"></span>](#video)Video
@@ -115,5 +115,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTQ3OTQ5Ml19
+eyJoaXN0b3J5IjpbMTg3Mzk3OTYyNl19
 -->

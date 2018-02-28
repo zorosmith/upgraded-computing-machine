@@ -113,28 +113,9 @@ cd ../build/
 COULD NOT LOAD MODULE "*svmstruct_mrf_act_dyn*"!
 perhaps module is not in module search path?
 
-**A1**. You should make sure that you executed the script *install_dependencies.sh* successfully. It's best to install the libraries with the same version
-
-for example,I want to use the webcam,modify the name just like the following lines ①②③：
-
-`const std::string CAMERA_TOPIC_NAME = "/camera/rgb/image_raw";//1`
-
-`const std::string CAMERA_WIDTH_PARAM ="/yolo_ros/image_width";//2`
-
-`const std::string CAMERA_HEIGHT_PARAM ="/yolo_ros/image_height";//3`
-
-`//const std::string CAMERA_TOPIC_NAME = "/usb_cam/image_raw";//①`
-
-`//const std::string CAMERA_WIDTH_PARAM = "/usb_cam/image_width";//②`
-
-`//const std::string CAMERA_HEIGHT_PARAM = "/usb_cam/image_height";//③`
-
-Then,run the following command:
-
-`roslaunch darknet_ros yolo_webcam_ros.launch`
+**A1**. You should make sure that you executed the script *install_dependencies.sh* successfully. It's best to install the libraries with the same version listed in the script.
  
-
-
+ 
 **Q2**. How to use other training weights.
 
 **A2**. Firstly,you need to provide the weights and cfg files into the directories:
@@ -151,5 +132,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDg0NzM2NjldfQ==
+eyJoaXN0b3J5IjpbNDg5MDQ1OTgzXX0=
 -->

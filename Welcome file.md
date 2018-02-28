@@ -33,7 +33,7 @@ More details you can see the link (http://pr.cs.cornell.edu/anticipation/)
 ### [<span class="octicon octicon-link"></span>](#quickstart)Quickstart
 
 * * *
-Before run this package,you need to install the CUDA8.0 that has a long progress,and modify the workspace name:
+Before run this package,you need to install the required dependencies
 
 Git clone the package into your catkin workspace.
 
@@ -115,5 +115,5 @@ Then,open the yolo_ros.cpp file and modify the current path of the weights and c
 
 Compile with catkin_make and run it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Mzk3OTYyNl19
+eyJoaXN0b3J5IjpbLTIxNDQ2MDY3Nl19
 -->
